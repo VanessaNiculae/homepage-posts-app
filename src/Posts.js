@@ -1,10 +1,11 @@
 
 import React from 'react'
+import GithubRepo from './components/GithubRepo';
 
-// function Posts() {
-//     return (
-    
-//     )
-// }
+function Posts() {
+    return (
+        <GithubRepo />
+    );
+}
 
-// export default Posts;
+export default Posts;
