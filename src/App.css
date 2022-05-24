@@ -62,7 +62,7 @@
 .slide.active {
   opacity: 1;
   transition-duration: 1s;
-  transform: scale(1.08);
+  transform: scale(1.0);
 }
 
 .button {
@@ -79,8 +79,9 @@
 
 .button-layout {
   position: relative;
-  top: 73vh;
+  top: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }

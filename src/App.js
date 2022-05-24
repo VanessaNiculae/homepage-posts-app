@@ -17,7 +17,6 @@ function App() {
           </a>
         </div>
 
-
         <div>
           <ImageSlider slides={SliderData} />
         </div>
