@@ -1,21 +1,25 @@
 import './App.css';
-import './Posts.js';
 import ImageSlider from './components/ImageSlider';
 import { SliderData } from './components/SliderData'
-
+import { Link } from 'react-router-dom';
+import './App1';
 
 function App() {
   return (
     <>
+
       <div className='background-color'>
 
         <div className='button-layout'>
-          <a href='./Posts.js' target='_blank'>
+
+          <Link to="Repositories" >
             <button className='button'>
               See my posts.
             </button>
-          </a>
+          </Link>
+
         </div>
+
 
         <div>
           <ImageSlider slides={SliderData} />
@@ -30,6 +34,7 @@ function App() {
 
           </header>
         </div>
+
       </div>
     </>
   );
