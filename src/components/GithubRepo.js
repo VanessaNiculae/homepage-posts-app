@@ -5,12 +5,12 @@ const getRepositories = setRepositories => fetch('https://api.github.com/users/V
     .then(setRepositories)
 
 const GithubRepo = () => {
-    const [repositories, setRepositories] = React.useState();
+    const [repositories, setRepositories] = React.useState([]);
 
     useEffect(() => {
         console.log('rep', repositories)
         getRepositories(setRepositories)
-    })
+    }, [])
 
     return repositories.map(repository => <div key={repository.id} className="card" style={{ cursor: 'pointer' }} onClick={() => {
         window.location.href = repository.html_url
